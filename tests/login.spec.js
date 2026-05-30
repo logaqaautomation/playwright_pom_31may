@@ -13,4 +13,5 @@ test('login',async({page})=>{
 
     const MakeAppointment = new MakeAppointmentPage(page);
     await MakeAppointment.verifyMakeAppointmentHeading();
+    
 });
