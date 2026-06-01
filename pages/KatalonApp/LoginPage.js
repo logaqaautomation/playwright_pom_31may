@@ -1,3 +1,4 @@
+const { expect } = require('@playwright/test');
 exports.LoginPage = class LoginPage{
     
     constructor (page){
@@ -6,6 +7,7 @@ exports.LoginPage = class LoginPage{
         this.username_txtbox = page.getByPlaceholder('Username').last();
         this.password_txtbox = page.getByPlaceholder('Password').last();
         this.loginbutton = page.getByRole('button', { name: 'Login' });
+        this.invalidlogintext = page.getByText('Login failed! Please ensure');
     }
 
     async clickMakeAppointment(){
@@ -32,5 +34,10 @@ exports.LoginPage = class LoginPage{
         await this.enterUserName(username);
         await this.enterPassword(password);
         await this.clickLoginButton();
+    }
+
+    async validateinvalidlogin(){
+        await expect(this.invalidlogintext).toBeVisible();
+        await this.page.waitForTimeout(3000);
     }
 }
