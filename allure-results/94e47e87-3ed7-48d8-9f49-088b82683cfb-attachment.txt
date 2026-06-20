@@ -1,0 +1,5 @@
+STARTING: TC04 Create Policy Data Driven - Excel
+[CONFIRMATION BANNER]: Policy Successfully Issued! Your commercial auto policy is active. You will receive confirmation at testautomation_456@example.com.
+[ISSUED POLICY NUMBER]: CAP-2026-9714701
+COMPLETED: TC04 Create Policy Data Driven - Excel
+STATUS: passed

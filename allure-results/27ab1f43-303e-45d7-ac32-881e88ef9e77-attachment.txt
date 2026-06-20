@@ -1,0 +1,2 @@
+[CONFIRMATION BANNER]: Policy Successfully Issued! Your commercial auto policy is active. You will receive confirmation at testautomation_456@example.com.
+[ISSUED POLICY NUMBER]: CAP-2026-2108868

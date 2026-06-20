@@ -1,0 +1,5 @@
+STARTING: TC02 Create Policy with liability coverage
+[CONFIRMATION BANNER]: Policy Successfully Issued! Your commercial auto policy is active. You will receive confirmation at testautomation_456@example.com.
+[ISSUED POLICY NUMBER]: CAP-2026-8568272
+COMPLETED: TC02 Create Policy with liability coverage
+STATUS: passed

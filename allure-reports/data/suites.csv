@@ -1,4 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","11161","bookappointment","chromium","2026-06-01","passed","2026-06-01","","HealthAppointmentTest.spec.js","",""
-"","8447","Invalidlogin","chromium","2026-06-01","passed","2026-06-01","","HealthAppointmentTest.spec.js","",""
-"","8688","validlogin","chromium","2026-06-01","passed","2026-06-01","","HealthAppointmentTest.spec.js","",""
+"","43560","TC01 Create Policy","chromium","2026-06-20","passed","2026-06-20","","Regression/TC01-CreatePolicy.spec.js","",""

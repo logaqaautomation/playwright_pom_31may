@@ -16,6 +16,9 @@ reporter:[
     ['allure-playwright']
 ],
 
+before test execution, to clear previous allure-reports and results
+rm -rf allure-results allure-reports
+
 after the test execution, to generate allure-reports [from allure-results]
 npx allure generate allure-results --clean -o allure-reports
 

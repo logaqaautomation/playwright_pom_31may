@@ -1,0 +1,3 @@
+STARTING: TC02 Create Policy with liability coverage
+COMPLETED: TC02 Create Policy with liability coverage
+STATUS: failed
