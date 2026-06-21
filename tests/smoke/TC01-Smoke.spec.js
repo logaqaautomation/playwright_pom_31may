@@ -2,7 +2,7 @@ import { test, expect } from '../../fixtures/baseTest';
 import { ExcelReader } from '../../utils/ExcelReader';
 
 const testData = ExcelReader.load(
-    'test-input/policyData/PolicyData.xlsx',
+    'test-input/policyData/policyData.xlsx',
     'TC04'
 );
 
