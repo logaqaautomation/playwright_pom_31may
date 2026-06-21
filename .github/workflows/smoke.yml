@@ -5,14 +5,10 @@ on:
   push:
     branches:
       - main
-      - master
-      - develop
 
   pull_request:
     branches:
       - main
-      - master
-      - develop
 
 jobs:
   smoke-test:
@@ -42,6 +38,13 @@ jobs:
         run: |
           echo "PLAYWRIGHT_USERNAME=${{ secrets.PLAYWRIGHT_USERNAME }}" > .env
           echo "PLAYWRIGHT_PASSWORD=${{ secrets.PLAYWRIGHT_PASSWORD }}" >> .env
+
+      - name: Clean Previous Results
+        run: |
+          rm -rf allure-results
+          rm -rf allure-report
+          rm -rf test-results
+          rm -rf playwright-report
 
       - name: Run Smoke Tests
         run: npx playwright test --project=smoke
