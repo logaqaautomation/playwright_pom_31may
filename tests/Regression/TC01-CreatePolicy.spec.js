@@ -1,4 +1,4 @@
-import {test,chromium, expect} from '@playwright/test'
+import {test,expect} from '@playwright/test'
 import {LoginPage} from '../../pages/MyInsurance/00-LoginPage'
 import {CustomerInfoPage} from '../../pages/MyInsurance/01-CustomerInfoPage'
 import {BusinessInfoGeneral} from '../../pages/MyInsurance/02-a-BusinessInfoGeneralPage'
@@ -11,17 +11,10 @@ import {QuotePage} from '../../pages/MyInsurance/05-QuotePage'
 import {PolicyPage} from '../../pages/MyInsurance/06-PolicyPage'
 
 //test.describe.configure({mode:"serial"});
-test('TC01 Create Policy',async({},testInfo)=>{
-
-    const browser = await chromium.launch({
-    headless: false,
-    slowMo: 500
-    });
-
-    const page = await browser.newPage();
+test('TC01 Create Policy',async({page},testInfo)=>{
 
     test.slow();
-    const Login = new LoginPage(page,);
+    const Login = new LoginPage(page);
     await Login.openapplication();
     await Login.login('TestUser','TestPassword',testInfo);
 
@@ -132,7 +125,7 @@ test('TC01 Create Policy',async({},testInfo)=>{
 
   const ReviewQuotePage = new QuotePage(page);
   const QuoteData = {
-    aymentPlan: 'quarterly', // Options: 'annual' | 'semi-annual' | 'quarterly' | 'monthly'
+    paymentPlan: 'quarterly', // Options: 'annual' | 'semi-annual' | 'quarterly' | 'monthly'
     specialInstructions: 'Please route this commercial auto policy down to the specialized underwriting queue for priority review.',
     confirmAccuracy: true   // true checks the mandatory binding authorization checkbox
   };    

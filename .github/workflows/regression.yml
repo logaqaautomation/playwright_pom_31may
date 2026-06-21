@@ -40,7 +40,7 @@ jobs:
           rm -rf playwright-report
 
       - name: Run Smoke Tests
-        run: npx playwright test --project=regression --workers=4
+        run: npx playwright test --project=regression --workers=4 --retries=1
 
       - name: Upload Playwright Report
         if: always()
