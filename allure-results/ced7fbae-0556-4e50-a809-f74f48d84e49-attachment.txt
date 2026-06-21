@@ -1,0 +1,15 @@
+========================================
+SMART ACTION STARTED
+Locator Name: CustomerPage.continueButton
+========================================
+STEP 1 - Trying original locator
+STEP 3 - Original locator failed
+Error: locator.click: Timeout 3000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Continue123' })
+
+STEP 4 - Saved locator found: button#nextBtn
+STEP 5 - Trying saved locator
+STEP 6 - Saved locator worked
+[CONFIRMATION BANNER]: Policy Successfully Issued! Your commercial auto policy is active. You will receive confirmation at testautomation_456@example.com.
+[ISSUED POLICY NUMBER]: CAP-2026-3182110

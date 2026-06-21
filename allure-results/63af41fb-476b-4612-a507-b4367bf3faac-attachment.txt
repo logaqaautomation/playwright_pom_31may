@@ -1,0 +1,9 @@
+
+Locator Name:
+CustomerPage.continueButton
+
+Original Locator:
+getByRole('button',{name:'Continue123'})
+
+Healed Locator:
+button#nextBtn

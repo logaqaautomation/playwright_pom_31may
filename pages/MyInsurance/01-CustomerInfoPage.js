@@ -1,4 +1,6 @@
 import { expect } from '@playwright/test';
+const SmartActions = require('../../utils/SmartActions');
+const SmartLocator = require('../../utils/SmartLocator');
 
 exports.CustomerInfoPage = class CustomerInfoPage {
 
@@ -23,10 +25,14 @@ exports.CustomerInfoPage = class CustomerInfoPage {
     this.licenseNumberInput = this.page.getByLabel('License Number *');
     this.issuingStateDropdown = this.page.getByLabel('Issuing State *');
     this.yearsLicensedInput = this.page.getByLabel('Years Licensed *');
-    this.continueButton = this.page.getByRole('button', { name: /Continue →/i });
+    this.continueButton = SmartLocator.create(
+                                page,
+                                'CustomerPage.continueButton',
+                                "getByRole('button',{name:'Continue123'})",
+                                page.getByRole('button', { name: 'Continue123' })
+                                );
+
   }
-
-
   // ============ Actions ============
 
   async fillApplicationAndContinue(formData, testInfo) {
@@ -73,9 +79,9 @@ exports.CustomerInfoPage = class CustomerInfoPage {
         contentType: 'image/png'
       });
     }
-    
+
     // Submit Form
-    await this.continueButton.click();
+    await this.continueButton.click(testInfo);
 
   }
 

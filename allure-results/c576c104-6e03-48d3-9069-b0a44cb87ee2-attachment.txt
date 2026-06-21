@@ -1,0 +1,21 @@
+========================================
+SMART ACTION STARTED
+Locator Name: CustomerPage.continueButton
+========================================
+STEP 1 - Trying original locator
+STEP 3 - Original locator failed
+Error: locator.click: Timeout 3000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Continue123' })
+
+STEP 4 - Saved locator found: undefined
+STEP 7 - No saved locator found. Calling Gemini...
+STEP 8 - Gemini suggested: #nextBtn
+STEP 9 - Healed locator saved
+STEP 10 - Healing info attached to report
+STEP 11 - Trying healed locator
+STEP 12 - Healed locator worked
+SMART ACTION COMPLETED
+========================================
+[CONFIRMATION BANNER]: Policy Successfully Issued! Your commercial auto policy is active. You will receive confirmation at testautomation_456@example.com.
+[ISSUED POLICY NUMBER]: CAP-2026-3713000
