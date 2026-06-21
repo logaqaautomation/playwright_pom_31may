@@ -65,7 +65,7 @@ export default defineConfig({
 
     {
       name: 'regression',
-      testDir: './tests/regression',
+      testDir: './tests/Regression',
       use: {
         ...devices['Desktop Chrome'],
         launchOptions: {
