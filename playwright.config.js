@@ -63,6 +63,17 @@ export default defineConfig({
       },
     },
 
+    {
+      name: 'regression',
+      testDir: './tests/regression',
+      use: {
+        ...devices['Desktop Chrome'],
+        launchOptions: {
+          slowMo: 500
+        }
+      },
+    },
+
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
