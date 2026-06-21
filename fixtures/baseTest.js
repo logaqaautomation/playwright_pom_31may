@@ -1,6 +1,7 @@
 import { test as base, expect } from '@playwright/test';
 import { LoginPage } from '../pages/MyInsurance/00-LoginPage';
 import { PageManager } from '../pages/MyInsurance/PageManager';
+import { ENV } from '../config/env';
 
 export const test = base.extend({
 
@@ -9,7 +10,9 @@ export const test = base.extend({
         const loginPage = new LoginPage(page);
 
         await loginPage.openapplication();
-        await loginPage.login('TestUser', 'TestPassword',testInfo);
+        await loginPage.login(ENV.username,
+                              ENV.password,
+                              testInfo);
 
         const pages = new PageManager(page);
         await use(pages);

@@ -1,0 +1,5 @@
+STARTING: TC01 Smoke
+[CONFIRMATION BANNER]: Policy Successfully Issued! Your commercial auto policy is active. You will receive confirmation at testautomation_456@example.com.
+[ISSUED POLICY NUMBER]: CAP-2026-4482218
+COMPLETED: TC01 Smoke
+STATUS: passed

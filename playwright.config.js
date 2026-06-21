@@ -52,6 +52,17 @@ export default defineConfig({
        },
     },
 
+    {
+      name: 'smoke',
+      testDir: './tests/smoke',
+      use: {
+        ...devices['Desktop Chrome'],
+        launchOptions: {
+          slowMo: 500
+        }
+      },
+    },
+
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
